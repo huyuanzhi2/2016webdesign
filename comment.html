@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>评论板</title>
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<style>
+body{background-image:url(img/back.jpg);}
+form {
+background: #F7F7F7;
+margin-top:40px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:40px;
+max-width: 800px;
+padding: 25px 15px 25px 10px;
+font: 12px Georgia, "Times New Roman", Times, serif;
+color: #888;
+text-shadow: 1px 1px 1px #FFF;
+border:1px solid #E4E4E4;
+}
+h1 {
+font-size: 27px;
+padding: 0px 0px 10px 40px;
+display: block;
+border-bottom:1px solid #E4E4E4;
+margin: -10px -15px 30px -10px;;
+color: black;
+}
+h1>span {
+display: block;
+font-size: 11px;
+}
+label {
+display: block;
+margin: 0px;
+}
+label>span {
+float: left;
+width: 20%;
+text-align: right;
+padding-right: 10px;
+margin-top: 10px;
+color: #888;
+}
+input[type="text"], input[type="email"], textarea, select {
+border: 1px solid #DADADA;
+color: #888;
+height: 30px;
+margin-bottom: 16px;
+margin-right: 6px;
+margin-top: 2px;
+outline: 0 none;
+padding: 3px 3px 3px 5px;
+width: 70%;
+font-size: 12px;
+line-height:15px;
+box-shadow: inset 0px 1px 4px #ECECEC;
+-moz-box-shadow: inset 0px 1px 4px #ECECEC;
+-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+textarea{
+padding: 5px 3px 3px 5px;
+}
+select {
+background: #FFF url('img/down-arrow.png') no-repeat right;
+background: #FFF url('img/down-arrow.png') no-repeat right);
+appearance:none;
+-webkit-appearance:none;
+-moz-appearance: none;
+text-indent: 0.01px;
+text-overflow: '';
+width: 70%;
+height: 35px;
+line-height: 25px;
+}
+textarea{
+height:110px;
+}
+.button {
+background: #E27575;
+border: none;
+padding: 10px 25px 10px 25px;
+color: #FFF;
+box-shadow: 1px 1px 5px #B6B6B6;
+border-radius: 3px;
+text-shadow: 1px 1px 1px #9E3F3F;
+cursor: pointer;
+}
+.button:hover {
+background: #CF7A7A
+}
+</style>
+</head>
+<ul id="breadcrumb">
+  <li><a id="to_home" href="index.html"> </a></li>
+  <li><a id="to_introduction" href="introduction.html">个人简介</a></li>
+  <li><a id="to_foot" href="foot.html">足迹</a></li>
+  <li><a id="to_note" href="note.html">游记</a></li>
+  <li><a id="to_comment" href="comment.html">评论板</a></li>
+  <li><a id="to_photo" href="photo.html">照片墙</a></li>
+  <li><a id="to_about" href="about.html">关于网站</a></li>
+</ul>
+<form action="" method="post">
+<h1>发表评论
+<span>&nbsp;Comment</span>
+</h1>
+<label>
+<span>姓名&nbsp;&nbsp; :</span>
+<input id="name" type="text" name="name" placeholder="请输入您的尊姓大名" />
+</label>
+<label>
+<span>Email :</span>
+<input id="email" type="email" name="email" placeholder="请输入你的邮箱地址" />
+</label>
+<label>
+<span>评论内容 :</span>
+<textarea id="message" name="message" placeholder="请填写你要评论的内容"></textarea>
+</label>
+<label>
+<span>评论主题 :</span><select name="selection">
+<option value="Agree">赞美</option>
+<option value="Disagree">批评</option>
+</select>
+</label>
+<label>
+<span>&nbsp;</span>
+<input type="button" class="button" value="发表" onclick="alert('抱歉，此功能尚未开启')"/>
+</label>
+</form>
+</body>
+</html>

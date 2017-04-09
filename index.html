@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    欢迎来到耿言庆的旅游空间
+  </title>
+  <style>
+  body{
+  background-image:url(img/back.jpg);
+  background-size:cover;
+  }
+  div{
+  display:block;
+  }
+  #head{
+  position:absolute;
+  left:240px;
+  top:60px;
+  }
+  #title{
+  color:#FFFFFF;
+  position:absolute;
+  top:90px;
+  left:460px;
+  }
+  #title1{
+  color:#FFFFFF;
+  position:absolute;
+  top:170px;
+  left:450px;
+  }
+  #introduction {
+  position:absolute;
+  left:330px;
+  top:340px;
+  background-color:#FFFFFF;
+  width:200px;
+  height:190px;
+  border-radius:15px;
+
+  }
+  #foot{
+  position:absolute;
+  background-color:#FFFFFF;
+  width:200px;
+  height:190px;
+  left:555px;
+  top:340px;
+  border-radius:15px;
+  }
+  #note{
+  position:absolute;
+  background-color:#FFFFFF;
+  width:200px;
+  height:190px;
+  left:780px;
+  top:340px;
+  border-radius:15px;
+  }
+  #about{
+  position:absolute;
+  background-color:#FFFFFF;
+  width:200px;
+  height:190px;
+  left:780px;
+  top:560px;
+  margin-bottom:80px;
+  border-radius:15px;
+  }
+  #photo{
+  position:absolute;
+  background-color:#FFFFFF;
+  width:200px;
+  height:190px;
+  left:555px;
+  top:560px;
+  margin-bottom:80px;
+  border-radius:15px;
+  }
+  #comment{
+  position:absolute;
+  background-color:#FFFFFF;
+  width:200px;
+  height:190px;
+  left:330px;
+  top:560px;
+  margin-bottom:80px;
+  border-radius:15px;
+  }
+  h2{
+  text-align:center;
+  }
+  .icon img{
+  position:relative;
+  height:100px;
+  left:48px;
+  top:20px;
+  float:left;
+  }
+  .title2 h2{
+  color:black;
+  position:relative;
+  top:115px;
+  right:50px;
+  height:30px;
+  }
+  #clock3_ {
+  opacity: 0.6;
+  position:absolute;
+  left:870px;
+  top:85px;
+  height:170px;
+  border-radius:15px;
+  }
+  #introduction,#foot,#note,#comment,#photo,#about {
+  transition: 1.0s;
+  }
+  #introduction:hover {
+  transform: scale(1.1);
+  }
+  #foot:hover {
+   transform: scale(1.1);
+  }
+  #note:hover {
+   transform: scale(1.1);
+  }
+  #comment:hover {
+   transform: scale(1.1);
+  }
+  #photo:hover {
+   transform: scale(1.1);
+  }
+  #about:hover {
+   transform: scale(1.1);
+  }
+  </style>
+</head>
+<body>
+<div id="head"><img src="img/head.png"></div>
+<h1 id="title">耿言庆的旅游空间</h1>
+<h3 id="title1">&nbsp;世界那么大，我们一起去看看吧少年！</h3>
+<a href="introduction.html">
+<div id="introduction">
+<div class="icon"><img src="img/introduction.png"></div>
+<div class="title2"><h2>个人简介</h2></div>
+</div>
+</a>
+<a href="foot.html">
+<div id="foot">
+<div class="icon"><img src="img/foot.png"></div>
+<div class="title2"><h2>足迹</h2></div>
+</div>
+</a>
+<a href="note.html">
+<div id="note">
+<div class="icon"><img src="img/note.png"></div>
+<div class="title2"><h2>游记</h2></div>
+</div>
+</a>
+<a href="about.html">
+<div id="about">
+<div class="icon"><img src="img/about.png"></div>
+<div class="title2"><h2>关于网站</h2></div>
+</div>
+</a>
+<a href="photo.html">
+<div id="photo">
+<div class="icon"><img src="img/photo.png"></div>
+<div class="title2"><h2>照片墙</h2></div>
+</div>
+</a>
+<a href="comment.html">
+<div id="comment">
+<div class="icon"><img src="img/comment.png"></div>
+<div class="title2"><h2>评论板</h2></div>
+</div>
+</a>
+<canvas id="clock3_" width="200px" height="200px"></canvas>
+<script src="js/clock.js"></script>
+<script>
+clockd3_={
+"indicate": true,
+"indicate_color": "#222",
+"dial1_color": "#666600",
+"dial2_color": "#81812e",
+"dial3_color": "#9d9d5c",
+"time_add": 1,
+"time_24h": true,
+"date_add":3,
+"date_add_color": "#999",
+};
+var c = document.getElementById('clock3_');
+cns3_ = c.getContext('2d');
+clock_norm(200,cns3_,clockd3_);
+</script>
+</body>
+</html>
